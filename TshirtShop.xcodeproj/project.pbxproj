@@ -11,6 +11,8 @@
 		411E6EB4283B61A5004EDFEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E6EB3283B61A5004EDFEF /* ContentView.swift */; };
 		411E6EB6283B61A5004EDFEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411E6EB5283B61A5004EDFEF /* Assets.xcassets */; };
 		411E6EB9283B61A5004EDFEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411E6EB8283B61A5004EDFEF /* Preview Assets.xcassets */; };
+		411E6EC2283B6639004EDFEF /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E6EC1283B6639004EDFEF /* ProductModel.swift */; };
+		411E6EC4283B6DE6004EDFEF /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E6EC3283B6DE6004EDFEF /* ProductView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		411E6EB3283B61A5004EDFEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		411E6EB5283B61A5004EDFEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		411E6EB8283B61A5004EDFEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		411E6EC1283B6639004EDFEF /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		411E6EC3283B6DE6004EDFEF /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		411E6EB0283B61A4004EDFEF /* TshirtShop */ = {
 			isa = PBXGroup;
 			children = (
+				411E6EC0283B61C7004EDFEF /* Model */,
+				411E6EBF283B61BD004EDFEF /* View */,
 				411E6EB1283B61A4004EDFEF /* TshirtShopApp.swift */,
 				411E6EB3283B61A5004EDFEF /* ContentView.swift */,
 				411E6EB5283B61A5004EDFEF /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				411E6EB8283B61A5004EDFEF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		411E6EBF283B61BD004EDFEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				411E6EC3283B6DE6004EDFEF /* ProductView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		411E6EC0283B61C7004EDFEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				411E6EC1283B6639004EDFEF /* ProductModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411E6EC4283B6DE6004EDFEF /* ProductView.swift in Sources */,
 				411E6EB4283B61A5004EDFEF /* ContentView.swift in Sources */,
+				411E6EC2283B6639004EDFEF /* ProductModel.swift in Sources */,
 				411E6EB2283B61A4004EDFEF /* TshirtShopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +297,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +327,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
