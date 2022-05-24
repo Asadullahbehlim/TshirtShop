@@ -7,22 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4101490C283CF7560024D135 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4101490B283CF7560024D135 /* CartButton.swift */; };
+		4101490F283CFBFE0024D135 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4101490E283CFBFE0024D135 /* CartView.swift */; };
+		41014912283D01790024D135 /* CartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41014911283D01790024D135 /* CartController.swift */; };
 		411E6EB2283B61A4004EDFEF /* TshirtShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E6EB1283B61A4004EDFEF /* TshirtShopApp.swift */; };
 		411E6EB4283B61A5004EDFEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E6EB3283B61A5004EDFEF /* ContentView.swift */; };
 		411E6EB6283B61A5004EDFEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411E6EB5283B61A5004EDFEF /* Assets.xcassets */; };
 		411E6EB9283B61A5004EDFEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411E6EB8283B61A5004EDFEF /* Preview Assets.xcassets */; };
 		411E6EC2283B6639004EDFEF /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E6EC1283B6639004EDFEF /* ProductModel.swift */; };
-		411E6EC4283B6DE6004EDFEF /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E6EC3283B6DE6004EDFEF /* ProductView.swift */; };
+		411E6EC4283B6DE6004EDFEF /* ProductPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E6EC3283B6DE6004EDFEF /* ProductPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4101490B283CF7560024D135 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		4101490E283CFBFE0024D135 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		41014911283D01790024D135 /* CartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartController.swift; sourceTree = "<group>"; };
 		411E6EAE283B61A4004EDFEF /* TshirtShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TshirtShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		411E6EB1283B61A4004EDFEF /* TshirtShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TshirtShopApp.swift; sourceTree = "<group>"; };
 		411E6EB3283B61A5004EDFEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		411E6EB5283B61A5004EDFEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		411E6EB8283B61A5004EDFEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		411E6EC1283B6639004EDFEF /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
-		411E6EC3283B6DE6004EDFEF /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		411E6EC3283B6DE6004EDFEF /* ProductPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4101490D283CFAD80024D135 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4101490E283CFBFE0024D135 /* CartView.swift */,
+				411E6EB3283B61A5004EDFEF /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		41014910283D01370024D135 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41014911283D01790024D135 /* CartController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		411E6EA5283B61A4004EDFEF = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +79,10 @@
 			isa = PBXGroup;
 			children = (
 				411E6EC0283B61C7004EDFEF /* Model */,
-				411E6EBF283B61BD004EDFEF /* View */,
+				4101490D283CFAD80024D135 /* Views */,
+				41014910283D01370024D135 /* Controller */,
+				411E6EBF283B61BD004EDFEF /* Components */,
 				411E6EB1283B61A4004EDFEF /* TshirtShopApp.swift */,
-				411E6EB3283B61A5004EDFEF /* ContentView.swift */,
 				411E6EB5283B61A5004EDFEF /* Assets.xcassets */,
 				411E6EB7283B61A5004EDFEF /* Preview Content */,
 			);
@@ -73,12 +97,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		411E6EBF283B61BD004EDFEF /* View */ = {
+		411E6EBF283B61BD004EDFEF /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				411E6EC3283B6DE6004EDFEF /* ProductView.swift */,
+				411E6EC3283B6DE6004EDFEF /* ProductPage.swift */,
+				4101490B283CF7560024D135 /* CartButton.swift */,
 			);
-			path = View;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		411E6EC0283B61C7004EDFEF /* Model */ = {
@@ -159,10 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				411E6EC4283B6DE6004EDFEF /* ProductView.swift in Sources */,
+				4101490F283CFBFE0024D135 /* CartView.swift in Sources */,
+				411E6EC4283B6DE6004EDFEF /* ProductPage.swift in Sources */,
+				41014912283D01790024D135 /* CartController.swift in Sources */,
 				411E6EB4283B61A5004EDFEF /* ContentView.swift in Sources */,
 				411E6EC2283B6639004EDFEF /* ProductModel.swift in Sources */,
 				411E6EB2283B61A4004EDFEF /* TshirtShopApp.swift in Sources */,
+				4101490C283CF7560024D135 /* CartButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProductView: View {
+struct ProductPage : View {
     // MARK: - Property
     
     // MARK: - Body
@@ -57,7 +57,7 @@ struct ProductView: View {
 
 struct ProductView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductView(product: productList[3])
+        ProductPage(product: productList[2])
     }
 }
 

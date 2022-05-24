@@ -15,17 +15,32 @@ struct ContentView: View {
         ScrollView {
         LazyVGrid(columns: columns, spacing: 20) {
             ForEach(productList, id: \.id) {
-                Product in ProductView(product: Product)
+                Product in ProductPage(product: Product)
             }
-        }.padding()
         }
-        .navigationBarTitle(Text("Tshirt Shop"))
+        .padding()
+        }.navigationTitle(Text("Tshirt Shop"))
+                .toolbar {
+                    NavigationLink {
+                    CartView()
+                    }
+                    label : {
+                        CartButton(numberOfProducts: 2)
+                    }
+                   
+            
+        
         }.navigationViewStyle(StackNavigationViewStyle())
+            
+        }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+          //  .preferredColorScheme(.dark)
     }
 }
+
+
+    
