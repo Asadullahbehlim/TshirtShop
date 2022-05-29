@@ -25,10 +25,6 @@ struct CartButton: View {
                     .frame(width: 15, height: 15)
                     .background(.red)
                     .cornerRadius(55)
-                
-                
-                          
-                
             }
         }
     }

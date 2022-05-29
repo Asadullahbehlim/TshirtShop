@@ -16,6 +16,7 @@
 		411E6EB9283B61A5004EDFEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411E6EB8283B61A5004EDFEF /* Preview Assets.xcassets */; };
 		411E6EC2283B6639004EDFEF /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E6EC1283B6639004EDFEF /* ProductModel.swift */; };
 		411E6EC4283B6DE6004EDFEF /* ProductPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E6EC3283B6DE6004EDFEF /* ProductPage.swift */; };
+		414B6B7028435F5A0078ABB5 /* ProductCartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B6B6F28435F5A0078ABB5 /* ProductCartPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		411E6EB8283B61A5004EDFEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		411E6EC1283B6639004EDFEF /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		411E6EC3283B6DE6004EDFEF /* ProductPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPage.swift; sourceTree = "<group>"; };
+		414B6B6F28435F5A0078ABB5 /* ProductCartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCartPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				411E6EC3283B6DE6004EDFEF /* ProductPage.swift */,
 				4101490B283CF7560024D135 /* CartButton.swift */,
+				414B6B6F28435F5A0078ABB5 /* ProductCartPage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414B6B7028435F5A0078ABB5 /* ProductCartPage.swift in Sources */,
 				4101490F283CFBFE0024D135 /* CartView.swift in Sources */,
 				411E6EC4283B6DE6004EDFEF /* ProductPage.swift in Sources */,
 				41014912283D01790024D135 /* CartController.swift in Sources */,
