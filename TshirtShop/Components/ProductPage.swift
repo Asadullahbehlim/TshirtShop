@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ProductPage : View {
     // MARK: - Property
+    @EnvironmentObject var cartController : CartController
+    
     
     // MARK: - Body
     var product: Product
@@ -39,13 +41,13 @@ struct ProductPage : View {
             .shadow(radius: 3)
             
             Button {
-                print("Added To Cart")
+                cartController.addToCart(product: product)
             } label: {
                 Image(systemName: "plus")
                     .padding(10)
                     .foregroundColor(.white)
                     .background(.black)
-                    .cornerRadius(40)
+                    .cornerRadius(50)
                     .padding()
             }
             
@@ -58,6 +60,7 @@ struct ProductPage : View {
 struct ProductView_Previews: PreviewProvider {
     static var previews: some View {
         ProductPage(product: productList[2])
+            .environmentObject(CartController())
     }
 }
 
