@@ -23,7 +23,7 @@ struct ContentView: View {
                 }.padding()
             }
             
-            .navigationTitle(Text("Sweater Shop"))
+            .navigationTitle(Text("Tshirt Shop"))
             .toolbar {
                 NavigationLink {
                     CartView()

@@ -20,16 +20,24 @@ struct CartView: View {
                 
                 HStack {
                 Text("Your Cart Total is ")
+                        .font(.title2)
+                        .fontWeight(.bold)
                 Spacer()
                 Text("$\(cartController.total).00")
+                        .font(.title2)
                     .bold()
                 } // Hstack
                 .padding()
                 
+                PaymentButton()
+                    .padding()
+                
             } // If
             
             else {
-                Text  ("Your cart Is Empty")
+                Text ("Your cart Is Empty")
+                    .font(.title2)
+                    .fontWeight(.bold)
                 
             } // Else
             
